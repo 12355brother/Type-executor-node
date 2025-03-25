@@ -1,4 +1,3 @@
-require('dotenv').config();
 const Binance = require('node-binance-api');
 const binance = new Binance().options({
   APIKEY: process.env.BINANCE_API_KEY,
