@@ -1,0 +1,14 @@
+{
+  "name": "executor-sniper-node",
+  "version": "1.0.0",
+  "description": "Final Binance Executor Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "node-binance-api": "^1.0.1"
+  }
+}
