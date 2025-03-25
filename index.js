@@ -1,10 +1,46 @@
-const Binance = require('node-binance-api');
-const binance = new Binance().options({
-  APIKEY: process.env.BINANCE_API_KEY,
-  APISECRET: process.env.BINANCE_API_SECRET
-});
+const axios = require('axios');
+const crypto = require('crypto');
 
-binance.balance((error, balances) => {
-  if (error) return console.error("Error fetching balances:", error.body);
-  console.log("Balance fetched:", balances);
-});
+const API_KEY = process.env.BINANCE_API_KEY;
+const API_SECRET = process.env.BINANCE_API_SECRET;
+
+const BASE_URL = 'https://api.binance.com';
+
+const headers = {
+  'X-MBX-APIKEY': API_KEY,
+};
+
+async function executeSniper() {
+  const symbol = 'PIUSDT'; // Update if needed
+  const quantity = 1; // Adjust based on available funds
+
+  try {
+    const priceRes = await axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`);
+    const price = parseFloat(priceRes.data.price);
+    console.log(`[LIVE] Current Price of ${symbol}: ${price}`);
+
+    const orderData = {
+      symbol,
+      side: 'BUY',
+      type: 'MARKET',
+      quantity,
+      timestamp: Date.now(),
+    };
+
+    const query = new URLSearchParams(orderData).toString();
+    const signature = crypto
+      .createHmac('sha256', API_SECRET)
+      .update(query)
+      .digest('hex');
+
+    const finalQuery = `${query}&signature=${signature}`;
+
+    const response = await axios.post(`${BASE_URL}/api/v3/order?${finalQuery}`, null, { headers });
+
+    console.log('[EXECUTED] Order placed:', response.data);
+  } catch (error) {
+    console.error('[ERROR]', error.response?.data || error.message);
+  }
+}
+
+executeSniper();
