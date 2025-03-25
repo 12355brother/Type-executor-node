@@ -1,0 +1,15 @@
+require('dotenv').config();
+const Binance = require('node-binance-api');
+const binance = new Binance().options({
+  APIKEY: process.env.BINANCE_API_KEY,
+  APISECRET: process.env.BINANCE_API_SECRET,
+  useServerTime: true
+});
+
+binance.prices('BTCUSDT', (error, ticker) => {
+  if (error) {
+    console.error("Price fetch error:", error.body || error);
+  } else {
+    console.log("Current BTCUSDT price is:", ticker.BTCUSDT);
+  }
+});
