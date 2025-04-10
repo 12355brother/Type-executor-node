@@ -654,12 +654,19 @@ if (marketDipDetected && recoveryAbove50) {
 }
 
 // Layer 105 – Phantom Layer Mapping
-phantomMap.build(currentPattern, {
-  entryLevel: currentPrice,
-  trendAngle: trendAngle,
-  timeFrame: "3m"
-});
-console.log("Layer 105: Phantom Mapping Initialized.");
+const phantomLayerMap = (currentPattern, currentPrice, trendAngle) => {
+  const mapping = {
+    entryLevel: currentPrice,
+    trendAngle,
+    timeFrame: "3m"
+  };
+
+  phantomMap.build(currentPattern, mapping);
+
+  console.log("Layer 105: Phantom Mapping Initialized.", mapping);
+};
+
+phantomLayerMap(currentPattern, currentPrice, trendAngle);
 
 // Layer 106 – Sniper Cooldown Bypass
 if (lastTradeTimeAgo > cooldown && confidence > 90) {
