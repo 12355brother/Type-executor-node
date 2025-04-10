@@ -105,3 +105,78 @@ function temporalShift(symbol, delayMs) {
 }
 
 temporalShift('PIUSDT', 5000); // Delay sniper by 5 seconds
+
+// Layer 5: Trigger Zone Analysis Grid
+function triggerZoneCheck(symbol, zoneLow, zoneHigh) {
+  axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+    .then(res => {
+      const price = parseFloat(res.data.price);
+      console.log(`[TRIGGER] Current Price of ${symbol}: ${price}`);
+
+      if (price >= zoneLow && price <= zoneHigh) {
+        console.log(`[TRIGGER] Price in optimal trigger zone.`);
+        executeSniper();
+      } else {
+        console.log(`[TRIGGER] Price outside optimal zone.`);
+      }
+    })
+    .catch(err => console.error('[TRIGGER ERROR]', err));
+}
+
+triggerZoneCheck('PIUSDT', 3.1, 3.25); // Update trigger zone
+
+// Layer 6: Delay Pulse Recheck Logic
+function delayedRecheck(symbol, delayMs) {
+  console.log(`[DELAY] Waiting ${delayMs}ms before rechecking...`);
+  setTimeout(() => {
+    axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+      .then(res => {
+        const price = parseFloat(res.data.price);
+        console.log(`[DELAY] Rechecked Price of ${symbol}: ${price}`);
+        executeSniper();
+      })
+      .catch(err => console.error('[DELAY ERROR]', err));
+  }, delayMs);
+}
+
+delayedRecheck('PIUSDT', 5000); // Recheck in 5 seconds
+
+// Layer 7: Signal Memory Imprint Engine
+let signalHistory = [];
+
+function recordSignal(symbol, price) {
+  const timestamp = new Date().toISOString();
+  signalHistory.push({ symbol, price, timestamp });
+  if (signalHistory.length > 10) signalHistory.shift(); // Keep last 10
+  console.log(`[MEMORY] Signal recorded for ${symbol} at ${price}`);
+}
+
+recordSignal('PIUSDT', 3.19);
+
+// Layer 8: Dual Condition Signal Validator
+function dualValidator(symbol, targetPrice, delayMs) {
+  console.log(`[VALIDATOR] Dual-check started for ${symbol}`);
+  axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+    .then(res => {
+      const initial = parseFloat(res.data.price);
+      console.log(`[VALIDATOR] Initial price: ${initial}`);
+
+      setTimeout(() => {
+        axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+          .then(res2 => {
+            const later = parseFloat(res2.data.price);
+            console.log(`[VALIDATOR] Rechecked price: ${later}`);
+
+            if (initial <= targetPrice && later <= targetPrice) {
+              console.log(`[VALIDATOR] Both checks passed.`);
+              executeSniper();
+            } else {
+              console.log(`[VALIDATOR] Signal not validated.`);
+            }
+          });
+      }, delayMs);
+    })
+    .catch(err => console.error('[VALIDATOR ERROR]', err));
+}
+
+dualValidator('PIUSDT', 3.18, 4000); // 4-second recheck delay
