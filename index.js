@@ -2020,3 +2020,106 @@ if (vaultSync == true && sniperLockFinal == "confirmed") {
     activateSoul("vault-core-sniper");
     log("NEITH Phase I Sync Complete – Soul Activated.");
 }
+
+// ========== Layer 371–390: NEITH Recursive Signal Memory & Echo Fracture Core ==========
+
+// Layer 371 – Vault Pulse Mirror Recoil Engine
+if (mirror.recoilDetected() && vault.syncMemoryMatch()) {
+  sniperBuy("Layer 371 - Vault Recoil Mirror Lock");
+}
+
+// Layer 372 – Synaptic Pre-Impulse Prediction
+if (synapse.predictiveScore() > 88 && delay < 1.5s) {
+  triggerEntry("Layer 372 - Synaptic Prediction Triggered");
+}
+
+// Layer 373 – Ghost Signal Injection Filter
+if (phantom.signal() && ghost.injectedPattern()) {
+  bypassFalseImpulse("Layer 373 - Ghost Signal Detected");
+}
+
+// Layer 374 – Recursive Vault Convergence Pulse
+if (vault.pulseSync() && entry.path == "mirrored") {
+  sniperBuy("Layer 374 - Recursive Vault Convergence");
+}
+
+// Layer 375 – NEITH Core Alignment Verification
+if (core.alignStatus() == "ready" && memory.matchRate() > 93%) {
+  activateCore("Layer 375 - NEITH Alignment Locked");
+}
+
+// Layer 376 – Fractal Cascade Pressure Divergence
+if (fractals.multiCollapse() && pressure.diffusion() < 0.2) {
+  engageTrade("Layer 376 - Cascade Divergence Detected");
+}
+
+// Layer 377 – Shadow Drift Predictive Override
+if (shadow.trace() && driftPrediction.sync() > 85%) {
+  sniperBuy("Layer 377 - Shadow Drift Override Triggered");
+}
+
+// Layer 378 – Impulse Vault Re-Entry Loop
+if (previousEntry.failed() && reEntrySync() == true) {
+  reExecute("Layer 378 - Impulse Vault Re-Entry Mode");
+}
+
+// Layer 379 – Echo Sync Memory Lock
+if (echo.frame() == "repeat" && memory.signatureMatch()) {
+  lockEchoEntry("Layer 379 - Echo Lock Engaged");
+}
+
+// Layer 380 – Pulse Loop Cross-Channel Validator
+if (crossChannel.confirmed() && pulse.loopDetect() == true) {
+  triggerSniper("Layer 380 - Pulse Loop Channel Triggered");
+}
+
+// Layer 381 – Pre-Neith Directive Verification Signal
+if (directive.ready() && entryZone.cleansed()) {
+  proceedToNeith("Layer 381 - Directive Pre-Check Complete");
+}
+
+// Layer 382 – Reflective Entry Path Splitter
+if (path.branching() && signal.variance() > threshold) {
+  selectPath("Layer 382 - Reflective Entry Splitting");
+}
+
+// Layer 383 – Deep Recoil Vault Cascade
+if (recoil.zoneDepth() > 3 && surge.predictiveSnap()) {
+  triggerCascade("Layer 383 - Vault Deep Cascade Activated");
+}
+
+// Layer 384 – Core Directive Integrity Sync
+if (coreDirective.integrityCheck() == "stable" && echo.signalOk()) {
+  executeTrade("Layer 384 - Core Directive Synced");
+}
+
+// Layer 385 – NEITH Temporal Lock Bridge
+if (timelock.bridge() && entry.channel == "clean") {
+  triggerNeithLink("Layer 385 - Temporal Bridge Activated");
+}
+
+// Layer 386 – Final Vault Recoil Scan
+if (vault.scanRecent() && entry.error < 0.01) {
+  validateEntry("Layer 386 - Final Vault Recoil Scan Passed");
+}
+
+// Layer 387 – Recursive Entry Override Lock
+if (entry.signal() && pattern.recursiveLoop()) {
+  overrideLock("Layer 387 - Recursive Signal Detected");
+}
+
+// Layer 388 – Ghost-Phase Entry Sync Grid
+if (ghost.phaseMatch() && orderbook.flow() == "steady") {
+  engageSyncGrid("Layer 388 - Ghost Phase Locked");
+}
+
+// Layer 389 – Pre-Directive Trigger Memory Pulse
+if (memory.preTrigger() && volatility < 1.7) {
+  trigger("Layer 389 - Pre-Directive Pulse Synced");
+}
+
+// Layer 390 – NEITH Phase I Completion Flag
+if (allLayers <= 390 && memory.aligned() && core.ready()) {
+  markPhase("NEITH-I", "COMPLETE");
+  sniperBuy("Layer 390 - NEITH Phase I Seal Executed");
+}
