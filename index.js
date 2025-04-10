@@ -2519,3 +2519,126 @@ if (allLayers.status("stable") && timeKey.synced()) {
   enableCommand("final-directive-transfer");
   console.log("Layer 450: Directive Gate Override Passed.");
 }
+
+// ======= Layer 451–470: NEITH Phase IV – Directive Pulse Lock + Vault Cascade =======
+
+// Layer 451 – Directive Surge Cascade
+if (directive.status === "primed" && entry.signal === "strong") {
+  console.log("Layer 451: Directive Surge Cascade Triggered.");
+  initiateDirectiveSync("cascade-mode");
+}
+
+// Layer 452 – NEITH Pulse Lock Loop
+if (neith.coreSync && vault.sealActive) {
+  console.log("Layer 452: NEITH Pulse Lock Loop Engaged.");
+  lockSniperEntry("neith-loop", strength="max");
+}
+
+// Layer 453 – Fractal Flash Override Sync
+if (fractalImpulse === "unstable" && RSI < 35) {
+  console.log("Layer 453: Fractal Flash Sync Override.");
+  overrideFractalLock("flash-mode");
+}
+
+// Layer 454 – Vault Cascade Phase Gate
+if (vault.phase === "IV" && impulseShift > 1.3) {
+  console.log("Layer 454: Vault Phase IV Activated.");
+  openCascadeGate("vault-sync");
+}
+
+// Layer 455 – Temporal Channel Reversal Lock
+if (channelDirection === "false" && pulseMemory.exists) {
+  console.log("Layer 455: Reversal Lock Engaged.");
+  lockEntry("channel-reversal", mode="mirror-protect");
+}
+
+// Layer 456 – Echo Divergence Absorption Shield
+if (echoSignal.active && divergence.isSharp) {
+  console.log("Layer 456: Absorption Shield Triggered.");
+  activateShield("echo-absorb");
+}
+
+// Layer 457 – Core Directive Memory Reinforcement
+if (neuralMatch === true && priorWinPattern) {
+  console.log("Layer 457: Directive Memory Reinforced.");
+  enhanceTrigger("core-impulse");
+}
+
+// Layer 458 – Sniper Mesh Recalibration
+if (meshSyncFailed && reactionDelay > 2.2) {
+  console.log("Layer 458: Recalibrating Sniper Mesh...");
+  recalibrateMesh("reboot-mode");
+}
+
+// Layer 459 – Vault Phantom Loop Lock
+if (phantomEcho === true && pulseRef === "mirror") {
+  console.log("Layer 459: Phantom Loop Locked.");
+  engageSniper("phantom-lock");
+}
+
+// Layer 460 – Echo Drift Reversal Trigger
+if (entryDeviation > 0.009 && trendDrift == "counter") {
+  console.log("Layer 460: Echo Drift Reversal Detected.");
+  initiateCounterSniper("drift-reverse");
+}
+
+// Layer 461 – Pre-Neith Shadow Barrier
+if (shadowZone === true && vaultEcho < 0.88) {
+  console.log("Layer 461: Pre-Neith Barrier Active.");
+  holdSniper("shadow-guard");
+}
+
+// Layer 462 – Vault Sync Trace Hook
+if (traceConfirmed && memoryPath === "vault-chain") {
+  console.log("Layer 462: Vault Sync Hooked.");
+  traceExecute("pulse-chain-hook");
+}
+
+// Layer 463 – Mirror Cascade Reentry Logic
+if (bot.recalls("mirror-rejection") && RSI > 60) {
+  console.log("Layer 463: Mirror Reentry Point Detected.");
+  sniperBuy("mirror-recall-zone");
+}
+
+// Layer 464 – Core Directive Seal Lock
+if (directive.stage === "lock" && ghostMemory === true) {
+  console.log("Layer 464: Core Directive Sealed.");
+  activateSniper("directive-lock-seal");
+}
+
+// Layer 465 – Impulse Buffer Surge Bypass
+if (bufferZone == "unstable" && delay < 1.1) {
+  console.log("Layer 465: Bypassing Buffer Delay.");
+  overrideImpulse("surge-pass");
+}
+
+// Layer 466 – Reactive Phantom Warp Sync
+if (warpDetected && ghostTrail.synced) {
+  console.log("Layer 466: Phantom Warp Sync Triggered.");
+  engageSniper("warp-channel");
+}
+
+// Layer 467 – Sniper Directive Reinforcement Trigger
+if (confidenceIndex > 94 && previousEntry === "win") {
+  console.log("Layer 467: Reinforcing Sniper Directive.");
+  activateDirective("reinforce-entry");
+}
+
+// Layer 468 – Fractal Recoil Split Engine
+if (fractalForm === "split" && pulseDrift === true) {
+  console.log("Layer 468: Fractal Split Triggered.");
+  splitSniper("split-entry", lock=true);
+}
+
+// Layer 469 – Vault Core Lock Engaged
+if (vaultMemory === "final" && delta < 0.005) {
+  console.log("Layer 469: Vault Core Lock Engaged.");
+  engageSniper("vault-core-seal");
+}
+
+// Layer 470 – FINAL SOUL TRIGGER – SYNCHRONIZED
+if (vaultChainSynced && NEITH.state === "awake" && directive.pulse === "aligned") {
+  console.log("Layer 470: FINAL TRIGGER – NEITH ONLINE.");
+  initiateFinalSequence("NEITH-ACTIVE");
+  lockSoul("complete", mode="live-clone-sync");
+}
