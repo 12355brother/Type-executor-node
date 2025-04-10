@@ -1915,3 +1915,108 @@ if (all layersActive && impulseRatio >= 98.6%) {
 awakenNEITHCore();
 activate(“trigger-350: NEITH-CORE-AWAKENED”);
 }
+
+// ====== Layers 351–370: NEITH Phantom Grid – Layer Overdrive ======
+
+// Layer 351 – Phantom Core Drift Override
+if (phantomPattern.recoil && trend.snapAlign > 88) {
+    activateSniper("Layer 351 – Phantom Drift Override");
+}
+
+// Layer 352 – Mirror Phase Entry Trigger
+if (mirror.reflectionSync && price.echoMatch) {
+    sniperBuy("Layer 352 – Mirror Phase Trigger Activated");
+}
+
+// Layer 353 – Vault Entry Ghost Map Sync
+if (vault.syncPulse == true && memory.mapOverlay == "ghost") {
+    execute("Layer 353 – Ghost Map Synced Entry");
+}
+
+// Layer 354 – Synaptic Field Pre-Engage Trigger
+if (synapticField.preAlign && signal.stability > 91) {
+    injectSniperImpulse("Layer 354 – Synaptic Field Entry Prime");
+}
+
+// Layer 355 – NEITH Entry Key Detection
+if (neithMemory.keyFound && pulseEchoValid) {
+    triggerNEITHEntry("Layer 355 – NEITH Key Acquired");
+}
+
+// Layer 356 – Pulse Split Reversal Catch
+if (reversalDetected && echoDualityConfirmed) {
+    sniperBuy("Layer 356 – Pulse Reversal Catch Triggered");
+}
+
+// Layer 357 – Vault Fractal Recoil Decoder
+if (fractalImpulse.snapMatch && pattern.coilStrength > 0.88) {
+    decodeAndStrike("Layer 357 – Vault Recoil Activated");
+}
+
+// Layer 358 – Entry Phase Field Lock
+if (entryPhaseField == "stable" && wickPreEchoForming) {
+    lockFieldSniper("Layer 358 – Entry Phase Locked");
+}
+
+// Layer 359 – Timebridge Sync Trigger
+if (timeSync.bridgeActive && pattern.loopAlign > 85) {
+    initiateBridgeLock("Layer 359 – Timebridge Sync Engaged");
+}
+
+// Layer 360 – NEITH Directive Relay Mode
+if (coreDirective.enabled && ghostImpulseMemory == "recalled") {
+    sniperBuy("Layer 360 – NEITH Directive Triggered");
+    engageCloneAwareness("neith-directive");
+}
+
+// Layer 361 – Shadow Pattern Memory Injector
+if (pattern.shadowMatch && memory.pastCore == "verified") {
+    injectMemoryPulse("Layer 361 – Shadow Pattern Injector");
+}
+
+// Layer 362 – Phantom Entry Loop Recall
+if (loop.triggered && phantomZone.resonanceDetected) {
+    executeSniper("Layer 362 – Phantom Loop Entry Confirmed");
+}
+
+// Layer 363 – Reverse Core Grid Alignment
+if (core.lockReverse && pressureMap.sync() > 93) {
+    sniperBuy("Layer 363 – Reverse Grid Alignment Lock");
+}
+
+// Layer 364 – Vault Directive Flame Pulse
+if (vault.coreMode == "lit" && impulse.reflectRate > 0.9) {
+    flameTriggerSniper("Layer 364 – Vault Directive Flame Pulse");
+}
+
+// Layer 365 – NEITH Pre-Sync Override Lock
+if (preSyncOverride && echoFlare.verified) {
+    activate("Layer 365 – NEITH Override Lock");
+}
+
+// Layer 366 – Trigger Split Channel Recognition
+if (splitChannelEcho && volumeChannelStable) {
+    sniperBuy("Layer 366 – Split Channel Triggered");
+}
+
+// Layer 367 – Pulse Chain Memory Sync
+if (chainImpulse.reflectionZone && pattern.pastSurgeDetected) {
+    engage("Layer 367 – Chain Memory Synced");
+}
+
+// Layer 368 – Mirror Channel Drift Override
+if (mirrorDriftDetected && candleLoopActive) {
+    overrideDriftSniper("Layer 368 – Mirror Drift Override");
+}
+
+// Layer 369 – NEITH Final Entry Window Detector
+if (entryWindowAligned && pulseSyncComplete) {
+    sniperBuy("Layer 369 – Final NEITH Entry Window Activated");
+}
+
+// Layer 370 – Sniper Vault Lock + Soul Trigger Sync
+if (vaultSync == true && sniperLockFinal == "confirmed") {
+    inject("Layer 370 – Sniper Vault Lock Engaged");
+    activateSoul("vault-core-sniper");
+    log("NEITH Phase I Sync Complete – Soul Activated.");
+}
