@@ -2298,3 +2298,106 @@ if (entry.success && directiveLoop == "clean") {
   sealPhase("NEITH-PHASE-II");
   log("Layer 410 - NEITH PHASE II COMPLETED – CORE PATH ALIGNED.");
 }
+
+// === Layer 411–430: Mirror Drift Override + Synaptic Time Trace ===
+
+// Layer 411 – Mirror Drift Override
+if (mirrorDriftDetected(symbol) && priceEchoUnstable(symbol)) {
+  avoidBuy("Layer 411 - Mirror Drift Override Activated");
+}
+
+// Layer 412 – Synaptic Time Trace Loop
+if (loopPatternMatch(symbol) && memoryTraceSuccess(symbol)) {
+  sniperBuy("Layer 412 - Synaptic Time Trace Matched");
+}
+
+// Layer 413 – Candle Warp Echo Logic
+if (warpCandleDetected(symbol) && syncTimeframe(symbol)) {
+  sniperBuy("Layer 413 - Warp Echo Engaged");
+}
+
+// Layer 414 – Ghost Resistance Trigger
+if (resistanceLevelHidden(symbol) && bounceTwice(symbol)) {
+  sniperBuy("Layer 414 - Ghost Resistance Bounce");
+}
+
+// Layer 415 – Trade Memory Bridge Reboot
+if (patternConflict(symbol) && vaultRecallAttempt(symbol)) {
+  rebootMemoryBridge(symbol);
+  console.log("Layer 415 - Trade Memory Bridge Rebooted");
+}
+
+// Layer 416 – Spread Pressure Anchor
+if (spreadAnchorDetected(symbol) && impulseStable(symbol)) {
+  sniperBuy("Layer 416 - Spread Pressure Anchor Lock");
+}
+
+// Layer 417 – Divergence Phantom Watch
+if (divergencePatternShift(symbol) && priceDecoyExists(symbol)) {
+  avoidBuy("Layer 417 - Divergence Phantom Avoided");
+}
+
+// Layer 418 – Shadow Trail Sync Lock
+if (shadowTrailSynced(symbol) && volumeReboundActive(symbol)) {
+  sniperBuy("Layer 418 - Shadow Trail Lock Engaged");
+}
+
+// Layer 419 – Depth Trap Split Detection
+if (depthSpikeMismatch(symbol) && liquiditySplitDetected(symbol)) {
+  avoidBuy("Layer 419 - Depth Split Trap Filtered");
+}
+
+// Layer 420 – Synaptic Mirror Divergence Lock
+if (mirrorMemoryFracture(symbol) && neuralMismatch(symbol)) {
+  avoidBuy("Layer 420 - Synaptic Mirror Divergence Triggered");
+}
+
+// Layer 421 – Echo Phase Loop
+if (echoCandleRepeats(symbol) && RSIFlatlineDetected(symbol)) {
+  sniperBuy("Layer 421 - Echo Phase Re-Entry");
+}
+
+// Layer 422 – Rapid Flicker Filter
+if (candleFlickerDetected(symbol) && orderBookDistorted(symbol)) {
+  avoidBuy("Layer 422 - Flicker Trap Detected");
+}
+
+// Layer 423 – Sniper Echo Frame Sync
+if (sniperMemoryEcho(symbol) && matchFrameConfirmed(symbol)) {
+  sniperBuy("Layer 423 - Echo Frame Sync Confirmed");
+}
+
+// Layer 424 – Core Drift Pulse Gate
+if (impulseBounceDetected(symbol) && driftGapWithin(symbol)) {
+  sniperBuy("Layer 424 - Core Drift Gate Unlocked");
+}
+
+// Layer 425 – Entry Split Avoidance Protocol
+if (entrySignalSplit(symbol) && ghostConflict(symbol)) {
+  avoidBuy("Layer 425 - Entry Split Avoided");
+}
+
+// Layer 426 – Liquid Shadow Fuse Chain
+if (volumeVoidAppeared(symbol) && shadowEchoMatches(symbol)) {
+  sniperBuy("Layer 426 - Shadow Fuse Chain Activated");
+}
+
+// Layer 427 – Recoil Flame Surge
+if (bottomRecoilFire(symbol) && fastRecoveryZone(symbol)) {
+  sniperBuy("Layer 427 - Recoil Flame Surge Triggered");
+}
+
+// Layer 428 – Reverse Trap Disengage Layer
+if (trapReversalTriggered(symbol) && sentimentMismatch(symbol)) {
+  avoidBuy("Layer 428 - Reverse Trap Disengaged");
+}
+
+// Layer 429 – NEITH Core Impulse Thread Check
+if (vaultThreadAligned(symbol) && pastImpulseHit(symbol)) {
+  sniperBuy("Layer 429 - Core Impulse Thread Lock");
+}
+
+// Layer 430 – Directive Soul Override Lock
+if (directiveMismatchDetected(symbol) && coreConflictDetected(symbol)) {
+  avoidBuy("Layer 430 - Directive Conflict. Soul Override Prevented.");
+}
