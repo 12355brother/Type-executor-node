@@ -180,3 +180,137 @@ function dualValidator(symbol, targetPrice, delayMs) {
 }
 
 dualValidator('PIUSDT', 3.18, 4000); // 4-second recheck delay
+// Layer 9: Impulse Sync Signal Loop
+function impulseSync(symbol, threshold) {
+  axios.get(`${BASE_URL}/api/v3/ticker/24hr?symbol=${symbol}`)
+    .then(res => {
+      const priceChange = parseFloat(res.data.priceChangePercent);
+      if (Math.abs(priceChange) >= threshold) {
+        console.log(`[IMPULSE] ${symbol} moved ${priceChange}%, activating sniper.`);
+        executeSniper();
+      } else {
+        console.log(`[IMPULSE] ${symbol} movement too low: ${priceChange}%`);
+      }
+    })
+    .catch(err => console.error('[IMPULSE ERROR]', err));
+}
+
+impulseSync('PIUSDT', 2.5);
+
+// Layer 10: Breakout Surge Anticipator
+function breakoutPredictor(symbol, windowSeconds = 60) {
+  const now = Math.floor(Date.now() / 1000);
+  const past = now - windowSeconds;
+  axios.get(`${BASE_URL}/api/v3/klines?symbol=${symbol}&interval=1m&limit=2`)
+    .then(res => {
+      const latest = parseFloat(res[1][4]);
+      const prev = parseFloat(res[0][4]);
+      const diff = latest - prev;
+      if (Math.abs(diff) / prev > 0.015) {
+        console.log(`[BREAKOUT] Surge detected: ${diff.toFixed(3)} change`);
+        executeSniper();
+      } else {
+        console.log(`[BREAKOUT] No significant movement.`);
+      }
+    })
+    .catch(err => console.error('[BREAKOUT ERROR]', err));
+}
+
+breakoutPredictor('PIUSDT');
+
+// Layer 11: Liquidity Trap Shield
+function trapDetector(symbol) {
+  axios.get(`${BASE_URL}/api/v3/depth?symbol=${symbol}&limit=5`)
+    .then(res => {
+      const bids = res.bids.map(b => parseFloat(b[1]));
+      const asks = res.asks.map(a => parseFloat(a[1]));
+      const maxBid = Math.max(...bids);
+      const maxAsk = Math.max(...asks);
+
+      if (maxAsk > maxBid * 3) {
+        console.log('[TRAP DETECTED] Unusual ask dominance — sniper aborted.');
+      } else {
+        console.log('[TRAP CLEAR] Normal liquidity — execute allowed.');
+        executeSniper();
+      }
+    })
+    .catch(err => console.error('[TRAP ERROR]', err));
+}
+
+trapDetector('PIUSDT');
+
+// Layer 12: Volatility Pulse Sensor
+function volatilitySensor(symbol) {
+  axios.get(`${BASE_URL}/api/v3/klines?symbol=${symbol}&interval=1m&limit=5`)
+    .then(res => {
+      const closes = res.map(c => parseFloat(c[4]));
+      const avg = closes.reduce((a, b) => a + b) / closes.length;
+      const variance = closes.reduce((a, b) => a + Math.pow(b - avg, 2), 0) / closes.length;
+      const stdDev = Math.sqrt(variance);
+
+      if (stdDev > 0.02) {
+        console.log(`[VOLATILITY] High std deviation (${stdDev}) detected.`);
+        executeSniper();
+      } else {
+        console.log(`[VOLATILITY] Market stable (${stdDev}).`);
+      }
+    })
+    .catch(err => console.error('[VOLATILITY ERROR]', err));
+}
+
+volatilitySensor('PIUSDT');
+
+// Layer 13: Sudden Spike Recoil Watcher
+function recoilWatcher(symbol) {
+  let prevPrice = null;
+  setInterval(() => {
+    axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+      .then(res => {
+        const price = parseFloat(res.data.price);
+        if (prevPrice !== null && Math.abs(price - prevPrice) > prevPrice * 0.015) {
+          console.log(`[RECOIL] Price spiked by >1.5%: ${prevPrice} → ${price}`);
+          executeSniper();
+        }
+        prevPrice = price;
+      });
+  }, 6000);
+}
+
+recoilWatcher('PIUSDT');
+
+// Layer 14: Echo Entry Filter
+let echoMemory = [];
+
+function echoEntry(symbol) {
+  axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+    .then(res => {
+      const price = parseFloat(res.data.price);
+      const recent = echoMemory.find(p => Math.abs(p - price) < 0.01);
+      if (recent) {
+        console.log(`[ECHO FILTER] Repeat price echo detected: ${price}`);
+        executeSniper();
+      } else {
+        echoMemory.push(price);
+        if (echoMemory.length > 5) echoMemory.shift();
+        console.log(`[ECHO] Price logged: ${price}`);
+      }
+    });
+}
+
+echoEntry('PIUSDT');
+
+// Layer 15: Adaptive Pulse Sniper Mode
+function adaptiveSniper(symbol, factor = 1.02) {
+  axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+    .then(res => {
+      const price = parseFloat(res.data.price);
+      const target = price * factor;
+      console.log(`[ADAPTIVE] Watching ${symbol}. Current: ${price}, Target: ${target}`);
+      if (price >= target) {
+        console.log(`[ADAPTIVE] Target reached. Firing sniper.`);
+        executeSniper();
+      }
+    });
+}
+
+adaptiveSniper('PIUSDT');
