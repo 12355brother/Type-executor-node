@@ -916,3 +916,103 @@ if (artificialReboundPattern && bounceFailedTwice) {
 if (phantomVolumeSpike && matchingHistoricalTrap) {
   sniperBuy("Layer 150 - Phantom Entry Confirmed");
 }
+
+// Layer 151: Core Liquidity Sync Catch
+if (volumeDelta > 2.5 && bidWallShift) {
+  sniperBuy("Layer 151 - Liquidity Sync Catch");
+}
+
+// Layer 152: Decoy Break Pre-Wick Filter
+if (wickLength > bodyLength * 2 && priceClosedBelowMid) {
+  disableBuy("Layer 152 - Decoy Wick Filtered");
+}
+
+// Layer 153: Recursive Trend Reinforce Lock
+if (trendLoopDetected && anglePositive && RSIConfirm) {
+  sniperBuy("Layer 153 - Recursive Trend Lock");
+}
+
+// Layer 154: Depth Rejection Mirror Flash
+if (instantRejection && depthBookDisorder) {
+  confirmReversal("Layer 154 - Mirror Flash Trigger");
+}
+
+// Layer 155: Entry Slip Detonation Grid
+if (entryZonePenetrated && priceReturnedAboveSupport) {
+  sniperBuy("Layer 155 - Slip Detonation");
+}
+
+// Layer 156: Exit Trap Surrogate Logic
+if (exitCandleMirror && lackOfFollowUpVolume) {
+  cancelSell("Layer 156 - Trap Confirmed");
+}
+
+// Layer 157: Fib Recoil Injector
+if (bounceNearFib0_618 && RSI recovering) {
+  sniperBuy("Layer 157 - Fib Recoil Injector");
+}
+
+// Layer 158: Flash Pivot Pulse Detector
+if (3PivotCandlesBack && breakoutFromStructure) {
+  sniperBuy("Layer 158 - Flash Pivot Entry");
+}
+
+// Layer 159: Precision Echo Timing Lock
+if (entryWindowSynced && pastPatternMatch) {
+  sniperBuy("Layer 159 - Echo Timing Lock Engaged");
+}
+
+// Layer 160: Multi-Layer Liquidity Burst Catch
+if (multiWhaleFillDetected && spreadTightened) {
+  sniperBuy("Layer 160 - Liquidity Burst Detected");
+}
+
+// Layer 161: Ghost Depth Fade
+if (ghostOrdersDisappeared && bidDrainDetected) {
+  avoidEntry("Layer 161 - Ghost Depth Alert");
+}
+
+// Layer 162: Candle Reversal Edge Lock
+if (reversalCandle > 70% shadow and RSI cross upward) {
+  sniperBuy("Layer 162 - Reversal Edge Engaged");
+}
+
+// Layer 163: Grid Cluster Wedge Detect
+if (clusterDetected && triangleForming && fakeBreakout) {
+  waitForConfirmation("Layer 163 - Cluster Trap Suspicion");
+}
+
+// Layer 164: Slippoint Recall Imprint
+if (priceHitPastSlipZone && RSI aligned) {
+  sniperBuy("Layer 164 - Slippoint Entry Match");
+}
+
+// Layer 165: Adaptive Entry Pulse Override
+if (marketPulseShift && normalEntryConditionsBlocked) {
+  activateOverride("Layer 165 - Adaptive Entry");
+}
+
+// Layer 166: Multi-Entry Sync Imprint
+if (3EntriesAligned && no conflict across layers) {
+  confirmBuy("Layer 166 - Multi-Entry Fusion");
+}
+
+// Layer 167: Short Trap Fractal Fade
+if (downtrendFake && liquidityPocketAbove) {
+  sniperBuy("Layer 167 - Short Trap Fader");
+}
+
+// Layer 168: Spread Pin Bounce
+if (priceHitTightSpreadLow && bouncedImmediately) {
+  sniperBuy("Layer 168 - Spread Bounce Trigger");
+}
+
+// Layer 169: Ladder Sniper Sequence Init
+if (ladderPatternConfirmed && RSI baseline reached) {
+  sniperBuy("Layer 169 - Ladder Entry");
+}
+
+// Layer 170: Rebound Flame Cross
+if (doubleReboundCandle && trend shift upward) {
+  sniperBuy("Layer 170 - Flame Rebound Entry");
+}
