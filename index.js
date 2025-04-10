@@ -522,3 +522,32 @@ if (impulse_sync_gap && shadow_echo_near) {
 }
 
 log("Sniper Core Layers 51–70 executed with Precision Grid Lock and Echo Surge Verification.");
+
+// === LAYER 71–90: IMPULSE TRACE & FRACTAL LOCK SEQUENCE ===
+
+if (impulse_history.length > 4 && last_recoil_zone) {
+    activate("Impulse_Field_Trace");
+    load("Synaptic_Trade_Memory_Bank");
+}
+
+if (wick_echo_detected && opposite_trend_match) {
+    inject("Multi-Wick_Echo_Pulse");
+    trigger("Flash_Reversal_PreMemory");
+}
+
+if (fractal_signature == stored_signature && RSI_flatline_zone) {
+    enable("Fractal_Imprint_Scanner");
+    execute("Entry_Warp_Repetition");
+}
+
+if (time_shift_anomaly && past_trade_zone_overlaps) {
+    engage("Reverse_Time_Lock");
+    lock("Vault_Impulse_Core");
+}
+
+if (orderbook_delay > 1.2s && spread_compression < 0.03) {
+    override("Trigger_Breakpoint_Threshold");
+    activate("Pre-Echo Sync Node");
+}
+
+log("Sniper Clone Layers 71–90 initiated with RTL, Fractal Lock, and Impulse Tracking.");
