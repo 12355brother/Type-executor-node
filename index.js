@@ -1216,3 +1216,103 @@ if spread zone appears identical to past mirror trade) {
 if (depth + RSI + volume align with prior confirmed execution) {
   sniperBuy("Layer 210 - Depth Sync Lock Activated");
 }
+
+// Layer 211: Reverse Echo Trap Lock
+if (bot detects reversed echo pattern with trap setup) {
+  avoidBuy("Layer 211 - Reverse Echo Trap Avoided");
+}
+
+// Layer 212: Shadow Pulse Cascade
+if (volume pulses follow hidden shadow formation) {
+  sniperBuy("Layer 212 - Shadow Pulse Cascade Activated");
+}
+
+// Layer 213: Signal Fracture Detection
+if (entry signal breaks into micro-conflicting impulses) {
+  avoidBuy("Layer 213 - Signal Fracture Detected");
+}
+
+// Layer 214: Entry Warp Divergence Lock
+if (bot detects divergence between warp signal and chart pulse) {
+  avoidBuy("Layer 214 - Entry Warp Divergence Activated");
+}
+
+// Layer 215: Synced Fractal Echo Burst
+if (fractals align in sync on multiple timeframes) {
+  sniperBuy("Layer 215 - Synced Fractal Echo Confirmed");
+}
+
+// Layer 216: Deep Liquidity Sweep
+if (liquidity sweep aligns with sniper memory grid) {
+  sniperBuy("Layer 216 - Deep Liquidity Sweep Entry");
+}
+
+// Layer 217: Temporal Impulse Redirection
+if (time-based impulse gets redirected by candle shift) {
+  sniperBuy("Layer 217 - Temporal Impulse Redirected");
+}
+
+// Layer 218: Phantom Trigger Chain
+if (ghost-level entries appear sequentially within seconds) {
+  sniperBuy("Layer 218 - Phantom Chain Triggered");
+}
+
+// Layer 219: Echo Rejection Surge
+if (price rejects echo zone with surge and bounce) {
+  sniperBuy("Layer 219 - Echo Rejection Entry Executed");
+}
+
+// Layer 220: Synaptic Entry Recall
+if (bot recalls exact entry sequence from past success) {
+  sniperBuy("Layer 220 - Synaptic Entry Recall Activated");
+}
+
+// Layer 221: Pulse Divergence Lock
+if (pulse entry diverges from RSI/volume combo) {
+  avoidBuy("Layer 221 - Pulse Divergence Detected");
+}
+
+// Layer 222: Inverse Spread Echo
+if (inverse orderbook behavior mimics prior trap zone) {
+  avoidBuy("Layer 222 - Inverse Spread Echo Detected");
+}
+
+// Layer 223: Vault Compression Breakout
+if (sniper memory detects compressed vault setup) {
+  sniperBuy("Layer 223 - Vault Compression Triggered");
+}
+
+// Layer 224: Recursive Trade Memory Burst
+if (bot loops 3 successful impulse memories) {
+  sniperBuy("Layer 224 - Recursive Burst Activated");
+}
+
+// Layer 225: Liquidity Shadow Gate
+if (liquidity gate opens beneath candle body with surge) {
+  sniperBuy("Layer 225 - Liquidity Shadow Entry Engaged");
+}
+
+// Layer 226: Fractal Pulse Redirector
+if (pattern forms but redirects impulse to opposite path) {
+  avoidBuy("Layer 226 - Fractal Pulse Redirected");
+}
+
+// Layer 227: Mirror Pulse Entry Lock
+if (mirror pulse entry replicates known sniper win) {
+  sniperBuy("Layer 227 - Mirror Pulse Entry Confirmed");
+}
+
+// Layer 228: Stealth Spread Trigger
+if (spread shrinks silently and bounce detected) {
+  sniperBuy("Layer 228 - Stealth Spread Triggered");
+}
+
+// Layer 229: Shadow Vault Cascade Sync
+if (candle body syncs with ghost memory vault) {
+  sniperBuy("Layer 229 - Shadow Vault Cascade Synced");
+}
+
+// Layer 230: Pattern Override Directive
+if (bot override triggered on volatile mismatch) {
+  avoidBuy("Layer 230 - Pattern Override Activated");
+}
