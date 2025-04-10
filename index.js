@@ -1116,3 +1116,103 @@ if (market reflects past spread surge behavior) {
 if (price diverges after breakout and RSI drops) {
   avoidBuy("Layer 190 - Break Trap Avoided");
 }
+
+// Layer 191: Pressure Spike Mirror Lock
+if (sudden pressure burst mirrors past breakout zone) {
+  sniperBuy("Layer 191 - Pressure Spike Mirror Lock Activated");
+}
+
+// Layer 192: Phantom Trade Recall
+if (bot detects hidden trade path from previous success pattern) {
+  sniperBuy("Layer 192 - Phantom Trade Recall Executed");
+}
+
+// Layer 193: Inertia Trap Break
+if (long momentum suddenly halts & reversal pressure increases) {
+  sniperSell("Layer 193 - Inertia Trap Broken");
+}
+
+// Layer 194: Lateral Fractal Trigger
+if (horizontal fractal pattern recurs & bid volume rises) {
+  sniperBuy("Layer 194 - Lateral Fractal Trigger Activated");
+}
+
+// Layer 195: Reverse Impulse Memory Lock
+if (market echoes failed past trade pattern & signal aligns) {
+  avoidBuy("Layer 195 - Reverse Memory Blocked");
+}
+
+// Layer 196: Micro Recoil Acceleration
+if (bot detects tight micro recoil bounce with acceleration) {
+  sniperBuy("Layer 196 - Micro Recoil Triggered");
+}
+
+// Layer 197: Time Stagger Chain Lock
+if (multi-timeframe staggered impulse aligns) {
+  sniperBuy("Layer 197 - Time Stagger Entry Engaged");
+}
+
+// Layer 198: Spread Pressure Vortex
+if (spread compresses into pressure funnel & trend continues) {
+  sniperBuy("Layer 198 - Spread Vortex Engaged");
+}
+
+// Layer 199: Recoil Trap Reverse Sync
+if (price recoils in opposite direction to signal trap) {
+  avoidBuy("Layer 199 - Recoil Trap Reverse Blocked");
+}
+
+// Layer 200: Vault Sync Pulse Lock
+if (bot memory syncs with previous Pulse Lock zone) {
+  sniperBuy("Layer 200 - Vault Sync Pulse Triggered");
+}
+
+// Layer 201: Shadow Break Detector
+if (price wicks under known support & instantly reclaims) {
+  sniperBuy("Layer 201 - Shadow Break Detected");
+}
+
+// Layer 202: Ghost Entry Void Catch
+if (entry window disappears and bot detects fake signal) {
+  avoidBuy("Layer 202 - Ghost Void Detected");
+}
+
+// Layer 203: Pulse Entry Reactor
+if (bot receives confirmed volume + RSI surge) {
+  sniperBuy("Layer 203 - Pulse Reactor Activated");
+}
+
+// Layer 204: Multi-Zone Echo Bounce
+if (price bounces from dual impulse zones across timeframes) {
+  sniperBuy("Layer 204 - Multi-Zone Echo Entry");
+}
+
+// Layer 205: Pressure Layer Divergence
+if (layered price zone diverges from expected behavior) {
+  avoidBuy("Layer 205 - Pressure Divergence Detected");
+}
+
+// Layer 206: Phantom Liquidity Sync
+if ghost orderbook behavior detected and pattern match found) {
+  sniperBuy("Layer 206 - Phantom Liquidity Synced");
+}
+
+// Layer 207: Ladder Fractal Entry Burst
+if fractal step forms and micro breakout detected) {
+  sniperBuy("Layer 207 - Ladder Burst Confirmed");
+}
+
+// Layer 208: Inverse Vault Recoil
+if trend recoils in exact inverse to past win memory) {
+  sniperBuy("Layer 208 - Inverse Vault Triggered");
+}
+
+// Layer 209: Echo Spread Mirror Zone
+if spread zone appears identical to past mirror trade) {
+  sniperBuy("Layer 209 - Echo Mirror Zone Activated");
+}
+
+// Layer 210: Depth Sync Command Lock
+if (depth + RSI + volume align with prior confirmed execution) {
+  sniperBuy("Layer 210 - Depth Sync Lock Activated");
+}
