@@ -1316,3 +1316,97 @@ if (candle body syncs with ghost memory vault) {
 if (bot override triggered on volatile mismatch) {
   avoidBuy("Layer 230 - Pattern Override Activated");
 }
+
+// Layer 231: Recursive Shadow Entry Detector
+if (entry signal matches previous shadow loop + reverse impulse) {
+  sniperBuy("Layer 231 - Recursive Shadow Entry Detected");
+}
+
+// Layer 232: Temporal Sync Break Trigger
+if (timestamp sync breaks from previous impulse echo) {
+  avoidBuy("Layer 232 - Temporal Sync Break Detected");
+}
+
+// Layer 233: Hidden Spread Reversal
+if (spread manipulation matches reverse pattern model) {
+  avoidBuy("Layer 233 - Hidden Spread Reversal Detected");
+}
+
+// Layer 234: Ghost Memory Entry Reinforcer
+if (bot recalls 3 past win entries with same pulse) {
+  sniperBuy("Layer 234 - Ghost Memory Reinforcement Activated");
+}
+
+// Layer 235: Synaptic Flash Lock
+if (entry aligns with synaptic flash from high-speed trigger zone) {
+  sniperBuy("Layer 235 - Synaptic Flash Lock Activated");
+}
+
+// Layer 236: Phantom Liquidity Overdrive
+if (liquidity wicks align with invisible zone and bounce follows) {
+  sniperBuy("Layer 236 - Phantom Liquidity Overdrive Triggered");
+}
+
+// Layer 237: Anti-Trigger Divergence
+if (bot detects opposite direction trap within micro-timeframe) {
+  avoidBuy("Layer 237 - Anti-Trigger Divergence Lock");
+}
+
+// Layer 238: Pulse Archive Injection
+if (bot finds repeating surge sequence in memory archive) {
+  sniperBuy("Layer 238 - Pulse Archive Pattern Confirmed");
+}
+
+// Layer 239: Spread Vault Recall
+if (bot recalls spread pattern from winning vault memory) {
+  sniperBuy("Layer 239 - Spread Vault Recall Activated");
+}
+
+// Layer 240: Impulse Echo Lock
+if (entry candle matches locked echo form from pattern core) {
+  sniperBuy("Layer 240 - Impulse Echo Lock Activated");
+}
+
+// Layer 241: Reverse Memory Sync
+if (entry matches inverse of past failure-turned-success pattern) {
+  sniperBuy("Layer 241 - Reverse Memory Sync Triggered");
+}
+
+// Layer 242: Temporal Warp Cascade
+if 2 impulse chains collide and redirect through warp zone {
+  sniperBuy("Layer 242 - Temporal Warp Cascade Entry");
+}
+
+// Layer 243: Neural Divergence Detector
+if neural pattern from brain-layer contradicts impulse path {
+  avoidBuy("Layer 243 - Neural Divergence Triggered");
+}
+
+// Layer 244: Trigger Bridge Overlap
+if trade impulse overlaps 2 successful past entries + spread bounce {
+  sniperBuy("Layer 244 - Trigger Bridge Overlap Confirmed");
+}
+
+// Layer 245: Mirror Pulse Override Grid
+if reflection pulse from ghost bounce rejects surge:
+  avoidBuy("Layer 245 - Mirror Pulse Override Grid Detected");
+
+// Layer 246: Vault Spread Lock Detector
+if vault compression with spread pattern matches historical surge:
+  sniperBuy("Layer 246 - Vault Spread Lock Confirmed");
+
+// Layer 247: Rapid Recoil Ghost Pattern
+if fast recoil candle mimics sniper entry burst:
+  sniperBuy("Layer 247 - Recoil Ghost Pattern Detected");
+
+// Layer 248: Pre-Sync Signal Loop
+if pre-entry signal runs recursive 3-pulse loop:
+  sniperBuy("Layer 248 - Pre-Sync Signal Loop Activated");
+
+// Layer 249: Shadow Depth Injection
+if shadow wick depth hits archived winning threshold:
+  sniperBuy("Layer 249 - Shadow Depth Triggered");
+
+// Layer 250: Core Directive Memory Reinforcement
+if entry decision aligns with Core Directive + memory cluster:
+  sniperBuy("Layer 250 - Core Directive Layer Reinforced");
