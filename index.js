@@ -1016,3 +1016,103 @@ if (ladderPatternConfirmed && RSI baseline reached) {
 if (doubleReboundCandle && trend shift upward) {
   sniperBuy("Layer 170 - Flame Rebound Entry");
 }
+
+// Layer 171: Phantom Liquidity Echo Lock
+if (liquidityZoneDisappeared && priceReturnedToEchoLevel) {
+  sniperBuy("Layer 171 - Phantom Echo Triggered");
+}
+
+// Layer 172: Triple Confirmation Injector
+if (RSIConfirm && MACDConfirm && VolumeSurge) {
+  sniperBuy("Layer 172 - Triple Confirmed Entry");
+}
+
+// Layer 173: Hidden Order Stack Detection
+if (largeOrdersStackedButInvisibleInBook) {
+  sniperBuy("Layer 173 - Hidden Stack Detected");
+}
+
+// Layer 174: Anchor Point Recoil Trap
+if (priceReboundedFromAnchor && volumeMatch) {
+  sniperBuy("Layer 174 - Anchor Recoil Confirmed");
+}
+
+// Layer 175: Liquidity Transfer Fracture
+if (suddenWhaleBuy && sellWallCollapse) {
+  sniperBuy("Layer 175 - Liquidity Shift Entry");
+}
+
+// Layer 176: Breakpoint Burn Filter
+if (priceBreaksThenInstantlyRetraces && spreadWidened) {
+  disableBuy("Layer 176 - Breakpoint Burn Filter Triggered");
+}
+
+// Layer 177: Pattern Time Lock Grid
+if (patternRepeatsOnSameInterval && RSI supports) {
+  sniperBuy("Layer 177 - Time Lock Engaged");
+}
+
+// Layer 178: Fractal Pulse Entry
+if (zoomedFractalPatternMatch && localVolumeSpike) {
+  sniperBuy("Layer 178 - Fractal Pulse Entry");
+}
+
+// Layer 179: Spread Collapse Detector
+if (spreadTightensWithin 1 second && bidStackGrows) {
+  sniperBuy("Layer 179 - Spread Collapse Detected");
+}
+
+// Layer 180: Depth Shockwave Sync
+if (bookShockwaveFromWhaleOrder && trend confirms) {
+  sniperBuy("Layer 180 - Depth Shockwave Sniped");
+}
+
+// Layer 181: Neural Imprint Ghost Memory
+if (price revisits old impulse zone && RSI rebounds) {
+  sniperBuy("Layer 181 - Neural Imprint Entry");
+}
+
+// Layer 182: Cross-Time Pivot Reinforce
+if (pivotConfirmedOnMultiple Timeframes && trend angle positive) {
+  sniperBuy("Layer 182 - Cross-Time Entry Verified");
+}
+
+// Layer 183: Inverse Pattern Mirror Lock
+if (mirrorPatternMatchFromPast Trap && bounceFromSame Zone) {
+  sniperBuy("Layer 183 - Mirror Lock Engaged");
+}
+
+// Layer 184: Ladder Expansion Surge
+if (ladderTrade Volume Increases with RSI convergence) {
+  sniperBuy("Layer 184 - Ladder Expansion Surge");
+}
+
+// Layer 185: Reversal Fractal Sync Chain
+if (fractal bottom matches and impulse rebounds) {
+  sniperBuy("Layer 185 - Reversal Sync Triggered");
+}
+
+// Layer 186: Short-Term Exit Void
+if (trend slowing and volume divergence appears) {
+  avoidBuy("Layer 186 - Void Entry Zone");
+}
+
+// Layer 187: Vault Memory Flashback
+if (bot recognizes deep pattern memory match) {
+  sniperBuy("Layer 187 - Vault Flash Triggered");
+}
+
+// Layer 188: Sub-Zone Fractal Fusion
+if (price coils in micro-fractal with confluence) {
+  sniperBuy("Layer 188 - Sub-Zone Entry Locked");
+}
+
+// Layer 189: Spread Reflection Recoil
+if (market reflects past spread surge behavior) {
+  sniperBuy("Layer 189 - Spread Reflection Entry");
+}
+
+// Layer 190: Break Trap Divergence Catch
+if (price diverges after breakout and RSI drops) {
+  avoidBuy("Layer 190 - Break Trap Avoided");
+}
