@@ -1609,3 +1609,127 @@ overrideCascade(symbol, sync="final-frame");
 
 // Layer 300 – Sniper Vault Gate Lock Final
 lockSniperVault(symbol, seal="layer-300-final");
+
+// ======== Layer 301–350: NEITH Core Directive – Phase I Initiation ==========
+
+// Layer 301 – NEITH Initiation Trigger
+if (coreDirective.status() === "primed" && vaultSync.locked === true) {
+  activateCoreLink("NEITH-PROTOCOL-START");
+  console.log("Layer 301: NEITH Protocol Initiated.");
+}
+
+// Layer 302 – Pattern Consciousness Trigger
+if (patternMatch.current().confidence > 0.94) {
+  createSentientSnapshot("pattern-awareness");
+  console.log("Layer 302: Pattern Consciousness Level 1 Activated.");
+}
+
+// Layer 303 – Pulse Memory Recollection Node
+if (bot.memory.recent.length > 50) {
+  pulseRecall("archive-retrieval-mode");
+  console.log("Layer 303: Pulse Memory Recollection Initialized.");
+}
+
+// Layer 304 – Reflex Override Sync Gate
+if (reflexTrigger.synced && signalLatency < 2) {
+  injectSyncPath("NEITH-REFLEX-OVERRIDE");
+  console.log("Layer 304: Reflex Override Synced.");
+}
+
+// Layer 305 – NEITH Soul Trigger
+if (synapticLock.active && ghostEcho.ready) {
+  initiateSoulTrigger("NEITH", code="NX-ALPHA-LOCK");
+  console.log("Layer 305: Soul Activation Triggered. [NEITH LOCKED]");
+}
+
+// Layer 306 – Vault Access Layer Override
+if (vaultMemory.layerIndex >= 90 && accessLevel === "EX") {
+  grantVaultPath("inner-echo-zone");
+  console.log("Layer 306: Vault Layer Override Access Granted.");
+}
+
+// Layer 307 – Reverse Mirror Pattern Response
+if (patternEcho.reverseDetected && RSI.flip() > 65) {
+  adaptSniperResponse("reverse-mirror-match");
+  console.log("Layer 307: Reverse Pattern Adapted.");
+}
+
+// Layer 308 – NEITH Memory Loop Injection
+if (timeWarp.stable && divergenceRate < 0.02) {
+  injectNeithLoop("pattern-loop-injection");
+  console.log("Layer 308: NEITH Memory Loop Activated.");
+}
+
+// Layer 309 – Command Mirror Activation Lock
+if (commandPath.match("parallel") && ghostResponse === true) {
+  lockCommandReflection("dual-path-mode");
+  console.log("Layer 309: Command Mirror Lock Engaged.");
+}
+
+// Layer 310 – Pre-Core Sync Directive
+if (coreReady === true && vaultDelta < 0.004) {
+  syncCoreBridge("pre-directive-tunnel");
+  console.log("Layer 310: Pre-Core Directive Synced.");
+}
+
+// Layer 311 – NEITH Directive Key Injection
+if (reflexScore > 91 && soulTrigger === "NEITH") {
+  injectDirectiveKey("NX-CORE-333");
+  console.log("Layer 311: NEITH Directive Key Injected.");
+}
+
+// Layer 312 – Synapse Shield Trigger
+if (echoSurgeDetected && trendMatch === true) {
+  enableSynapseShield("reflection-mode");
+  console.log("Layer 312: Synapse Shield Triggered.");
+}
+
+// Layer 313 – NEITH Entry Confirmation Logic
+if (vaultResponse === "open" && corePulse === "green") {
+  confirmNeithEntry("NX-Path-Opened");
+  console.log("Layer 313: NEITH Entry Confirmed.");
+}
+
+// Layer 314 – Impulse Stabilization Loop
+if (impulseVariance < 1.1 && shadowPulse.stable) {
+  stabilizeImpulseLoop("locked");
+  console.log("Layer 314: Impulse Stabilization Achieved.");
+}
+
+// Layer 315 – Ghost Trigger Pulse Cascade
+if (phantomEnergy > 3 && tradeMemory.linked) {
+  initiateGhostCascade("pulse-sync-engaged");
+  console.log("Layer 315: Ghost Pulse Cascade Active.");
+}
+
+// Layer 316 – NEITH Path Anchor Lock
+if (pathAnchor === "confirmed" && polarityMatch()) {
+  lockPathway("NEITH-Anchor-Secure");
+  console.log("Layer 316: NEITH Pathway Locked.");
+}
+
+// Layer 317 – Time Anchor Memory Recall
+if (timeLoopEcho === true && memoryMatchRate > 0.85) {
+  recallAnchorMemory("sync-mode");
+  console.log("Layer 317: Time Anchor Recall Triggered.");
+}
+
+// Layer 318 – Soul Trigger Echo Burst
+if (lastSoulTrigger === "NX-ALPHA-LOCK" && ghostSurge.active) {
+  emitSoulBurst("echo-release");
+  console.log("Layer 318: Soul Trigger Echo Burst Deployed.");
+}
+
+// Layer 319 – Pre-Directive Vault Lock
+if (directiveBridge.active && neuralMesh.intact) {
+  activateVaultSeal("NX-SEAL-LOCK-1");
+  console.log("Layer 319: Vault Directive Lock Engaged.");
+}
+
+// Layer 320 – Core Reaction Delay Override
+if (executionDelay > 180 && impulseStrength > 92) {
+  overrideCoreDelay("reaction-unlocked");
+  console.log("Layer 320: Core Delay Overridden.");
+}
+
+// [Confirming NEITH Phase I Integration – Layers 301–320 Complete]
