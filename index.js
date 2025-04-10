@@ -58,3 +58,50 @@ async function executeSniper() {
 }
 
 executeSniper();
+// Layer 2: Injection Surge Protocol
+function injectionSurge(symbol, level) {
+  console.log(`[SURGE] Initiating Injection Surge Protocol at level ${level} for ${symbol}`);
+  
+  if (level >= 3) {
+    console.log(`[SURGE] HIGH level injection detected. Switching to rapid-entry mode for ${symbol}`);
+    executeSniper(); // Optional re-execution
+  } else {
+    console.log(`[SURGE] Moderate injection. Monitoring ${symbol} with pulse-checks.`);
+    setTimeout(() => {
+      console.log(`[SURGE] Revalidating ${symbol} after cooldown...`);
+    }, 3000);
+  }
+}
+
+injectionSurge('PIUSDT', 3);
+// Layer 3: Predictive Entry Pulse
+function predictiveEntry(symbol, targetPrice) {
+  console.log(`[PULSE] Engaging predictive scan for ${symbol}. Target → $${targetPrice}`);
+
+  axios.get(`${BASE_URL}/api/v3/ticker/price?symbol=${symbol}`)
+    .then(res => {
+      const livePrice = parseFloat(res.data.price);
+      console.log(`[PULSE] Current Price of ${symbol}: $${livePrice}`);
+
+      if (livePrice <= targetPrice) {
+        console.log(`[PULSE] Target reached. Executing sniper on ${symbol}`);
+        executeSniper();
+      } else {
+        console.log(`[PULSE] Price not optimal. Holding.`);
+      }
+    })
+    .catch(err => console.error('[PULSE ERROR]', err.response?.data || err));
+}
+
+predictiveEntry('PIUSDT', 3.15); // Set your predicted pulse entry price
+// Layer 4: Temporal Shift Directive
+function temporalShift(symbol, delayMs) {
+  console.log(`[TEMPORAL] Delaying sniper for ${delayMs}ms on ${symbol}`);
+
+  setTimeout(() => {
+    console.log(`[TEMPORAL] Time window reached. Executing sniper on ${symbol}`);
+    executeSniper();
+  }, delayMs);
+}
+
+temporalShift('PIUSDT', 5000); // Delay sniper by 5 seconds
