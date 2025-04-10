@@ -551,3 +551,140 @@ if (orderbook_delay > 1.2s && spread_compression < 0.03) {
 }
 
 log("Sniper Clone Layers 71–90 initiated with RTL, Fractal Lock, and Impulse Tracking.");
+
+// Layer 91 – Trade Wake Pulse Trigger
+const wakePulse = () => {
+  const volatilitySpike = Math.abs(currentPrice - previousPrice) > (avgVolatility * 2.7);
+  if (volatilitySpike) {
+    console.log("Layer 91: Trade Wake Pulse Triggered.");
+    initiateScanSequence("wake-pulse");
+  }
+};
+wakePulse();
+
+// Layer 92 – Recursive Entry Detector
+function recursiveEntryDetector(depth = 0) {
+  if (depth > 3) return;
+  const movement = currentPrice - movingAvg;
+  if (Math.abs(movement) < 0.15) {
+    console.log(`Layer 92: Recursive Entry Confirmed at depth ${depth}`);
+    executeTrade('buy', 'recursive-core');
+  } else {
+    setTimeout(() => recursiveEntryDetector(depth + 1), 1000);
+  }
+}
+recursiveEntryDetector();
+
+// Layer 93 – Divergence Pulse Sync
+if (rsi < 35 && macdHistogram > 0) {
+  console.log("Layer 93: Bullish Divergence Sync Detected.");
+  triggerSniperShot('long');
+}
+
+// Layer 94 – Liquid Spread Immunity Lock
+const spread = Math.abs(ask - bid);
+if (spread <= 0.02) {
+  console.log("Layer 94: Spread Safe. Proceeding...");
+} else {
+  console.log("Layer 94: Spread too high. Holding fire.");
+}
+
+// Layer 95 – Pre-Pump Echo Scan
+if (volumeSurge && rsiRise && priceSpikeEarly) {
+  console.log("Layer 95: Pre-Pump Detected. Setting Echo Lock.");
+  initiateEchoMode("prepump-detection");
+}
+
+// Layer 96 – Hidden Whale Pattern Ping
+if (hiddenOrdersDetected > 3) {
+  console.log("Layer 96: Whale Shadows Detected.");
+  engageShadowMode();
+}
+
+// Layer 97 – Delay Surge Override
+if (timeSinceSignal > 3 && currentTrend === "confirmed") {
+  console.log("Layer 97: Delay Surge Confirmed. Entry Window Open.");
+  sniperExecute("buy", "surge-delay-bypass");
+}
+
+// Layer 98 – Signal Saturation Reducer
+let confirmedSignals = signalArray.filter(s => s.strength > 0.8);
+if (confirmedSignals.length > 4) {
+  console.log("Layer 98: Signal Saturation Detected. Filtering...");
+  confirmedSignals = confirmedSignals.slice(0, 2);
+}
+
+// Layer 99 – Mid-Candle Recoil Catcher
+if (currentCandle.body > 0 && currentCandle.wickBottom > wickTop * 2) {
+  console.log("Layer 99: Mid-Candle Recoil Detected.");
+  markChart("recoil-trap-zone");
+}
+
+// Layer 100 – Auto Stop Avoidance
+if (triggeredStopLossesInMarket > 10) {
+  console.log("Layer 100: Stop Hunt Detected. Switching to Passive Mode.");
+  setTradeMode("avoidance");
+}
+
+// Layer 101 – Temporal Entry Grid Logic
+const gridCheck = (price) => {
+  return (price % 0.05) < 0.01;
+};
+if (gridCheck(currentPrice)) {
+  console.log("Layer 101: Temporal Grid Match. Executing Timed Entry.");
+  sniperExecute("buy", "grid-timed-match");
+}
+
+// Layer 102 – Echo Fade Reentry Core
+if (lastEntryFailed && trendStillValid) {
+  console.log("Layer 102: Echo Fade Reentry Detected.");
+  reinitiateTrade("echo-fade-path");
+}
+
+// Layer 103 – Impulse Filter AI (IF-AI)
+if (impulseRating > 80 && reactionDelay < 200) {
+  console.log("Layer 103: IF-AI Confirmed. Proceeding.");
+  autoTriggerImpulse("verified");
+}
+
+// Layer 104 – Reverse Dip Layer
+if (marketDipDetected && recoveryAbove50) {
+  console.log("Layer 104: Reverse Dip Recovery Confirmed.");
+  triggerSniperShot("rebound-entry");
+}
+
+// Layer 105 – Phantom Layer Mapping
+phantomMap.build(currentPattern, {
+  entryLevel: currentPrice,
+  trendAngle: trendAngle,
+  timeFrame: "3m"
+});
+console.log("Layer 105: Phantom Mapping Initialized.");
+
+// Layer 106 – Sniper Cooldown Bypass
+if (lastTradeTimeAgo > cooldown && confidence > 90) {
+  console.log("Layer 106: Cooldown Bypass Activated.");
+  bypassCooldownAndFire();
+}
+
+// Layer 107 – Entry Grid Cascade Sync
+if (entryGrid.isSyncedWith("macroSupport")) {
+  console.log("Layer 107: Entry Grid Cascade Ready.");
+  sniperExecute("buy", "grid-cascade");
+}
+
+// Layer 108 – Wick Trap Immunity
+if (wickAboveBody > bodySize * 1.2) {
+  console.log("Layer 108: Wick Trap Immunity Activated.");
+  holdFire("trap-zone-detected");
+}
+
+// Layer 109 – Core Command Echo Shield
+setCoreShieldMode(true);
+console.log("Layer 109: Core Echo Shield Enabled.");
+
+// Layer 110 – Final Entry Echo Validator
+if (trendStrong && noFakeouts && RSI > 50 && volumeSurge) {
+  console.log("Layer 110: Final Echo Entry Confirmed.");
+  sniperExecute("buy", "final-entry");
+}
