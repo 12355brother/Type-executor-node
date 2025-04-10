@@ -1410,3 +1410,85 @@ if shadow wick depth hits archived winning threshold:
 // Layer 250: Core Directive Memory Reinforcement
 if entry decision aligns with Core Directive + memory cluster:
   sniperBuy("Layer 250 - Core Directive Layer Reinforced");
+
+// Layer 251 – Liquidity Delta Echo Mapping
+if (priceSurgeDetected(symbol)) {
+  markLiquidityZones(symbol, 'echo-mapping');
+}
+
+// Layer 252 – Pre-Break Fractal Alignment
+if (fractalsAligned(symbol)) {
+  prepareSniperStrike(symbol, 'pre-break-fractal');
+}
+
+// Layer 253 – Slippage Immunity Engine
+if (highVolatility(symbol)) {
+  engageSlippageControl(symbol);
+}
+
+// Layer 254 – Quantum Entry Offset Lock
+offsetLockEntry(symbol, adjustBasedOn('entry-delay-variance'));
+
+// Layer 255 – Mirror Trade Identification Protocol
+if (detectTradeMirror(symbol)) {
+  invalidateCloneEntry(symbol);
+}
+
+// Layer 256 – Flash Drop Immunity Check
+if (dropVelocity(symbol) > threshold) {
+  avoidEntry(symbol, 'flash-drop');
+}
+
+// Layer 257 – Phantom Entry Trap Filter
+if (phantomImpulseDetected(symbol)) {
+  blockFakeEntry(symbol);
+}
+
+// Layer 258 – Reverse Breach Anticipation Logic
+if (approachingReversalBreach(symbol)) {
+  setupCounterSniper(symbol);
+}
+
+// Layer 259 – Neural Entry Loop (N.E.L.)
+loopSniperMemory(symbol, recallPattern('loop-9'));
+
+// Layer 260 – Silent Surge Injection
+if (volumeSurgeSilent(symbol)) {
+  executeEntry(symbol, 'surge-auto');
+}
+
+// Layer 261 – Reactive Pulse Surge Engine
+if (marketPulse(symbol) === 'chaotic') {
+  activateSurgeProtocol(symbol);
+}
+
+// Layer 262 – Pattern Disruption Lock
+if (externalTrap(symbol)) {
+  lockPattern(symbol, 'disruption-mode');
+}
+
+// Layer 263 – Entry Shadow Splitter
+applyShadowEntrySplit(symbol, calculateRiskFactor());
+
+// Layer 264 – Pre-Entry Neural Core Check
+validateNeuralCore(symbol, 'ready');
+
+// Layer 265 – Trade Trail Ghost Imprint
+trackGhostTrades(symbol, injectGhostImprint());
+
+// Layer 266 – Liquidity Loop Divergence Check
+if (liquidityLoopDetected(symbol)) {
+  activateDivergenceShield(symbol);
+}
+
+// Layer 267 – Emotional Pattern Filter
+removeEmotionalBias(symbol);
+
+// Layer 268 – Sniper Command Isolation
+isolateCommandLayer(symbol, lock=true);
+
+// Layer 269 – Synaptic Trigger Grid
+triggerSynapticEntry(symbol, ifPatternMatch=true);
+
+// Layer 270 – Vault Lock Reinforcement
+lockVaultPattern(symbol, integrity="core-locked");
