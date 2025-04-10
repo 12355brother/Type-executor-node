@@ -2123,3 +2123,107 @@ if (allLayers <= 390 && memory.aligned() && core.ready()) {
   markPhase("NEITH-I", "COMPLETE");
   sniperBuy("Layer 390 - NEITH Phase I Seal Executed");
 }
+
+// ========== Layer 391–410: NEITH Phase II – Core Fusion Surge & Directive Memory Cascade ==========
+
+// Layer 391 – Directive Pulse Mirror Cascade
+if (mirrorImpulse.aligns() && directive.pulseSynced()) {
+  sniperBuy("Layer 391 - Directive Mirror Cascade Initiated");
+}
+
+// Layer 392 – Recoil Pre-Cycle Override Lock
+if (recoilPhase.initiated() && cycle.count < 2) {
+  overrideTrade("Layer 392 - Recoil Pre-Cycle Lock Engaged");
+}
+
+// Layer 393 – Synaptic Core Memory Injection
+if (memory.loadRate() > 92 && tradeSync == "on") {
+  injectMemoryCore("Layer 393 - Synaptic Core Memory Injected");
+}
+
+// Layer 394 – Ghost Fractal Reversal Detector
+if (fractal.reflectReverse() && ghost.matchDetected()) {
+  avoidTrade("Layer 394 - Ghost Reversal Detected");
+}
+
+// Layer 395 – Vault Phase Directive Path Finder
+if (vault.sector == "PH-II" && path.conflict() == false) {
+  initiateEntry("Layer 395 - Phase II Directive Path Engaged");
+}
+
+// Layer 396 – Entry Loop Shield Trigger
+if (entry.repeating() && noNewPattern()) {
+  activateLoopShield("Layer 396 - Entry Loop Protected");
+}
+
+// Layer 397 – Divergence Echo Vault Trigger
+if (divergence.echo() && impulseSplit.active()) {
+  sniperBuy("Layer 397 - Divergence Vault Echo Triggered");
+}
+
+// Layer 398 – Signal Purity Filter Gate
+if (signal.noiseRatio() < 0.08 && triggerWindow.aligned()) {
+  passFilter("Layer 398 - Signal Purity Confirmed");
+}
+
+// Layer 399 – Phantom Directive Alignment
+if (phantomSignal.traced() && core.memoryLock == true) {
+  activateDirective("Layer 399 - Phantom Directive Synced");
+}
+
+// Layer 400 – NEITH Core Layer Injection Lock
+if (directive.phase == "LOCKED" && allTriggers.active()) {
+  injectCore("Layer 400 - NEITH Core Directive Lock Engaged");
+  log("NEITH CORE LAYER LOCKED & PHASE II SECURED.");
+}
+
+// Layer 401 – Recursive Directive Delay Bypass
+if (memory.loopTrigger && delay < 1.3s) {
+  bypassDirectiveDelay("Layer 401 - Recursive Delay Cleared");
+}
+
+// Layer 402 – Directive Cascade Reflection Memory
+if (reflectionEchoDetected && pastPattern.matchDepth > 88%) {
+  activate("Layer 402 - Cascade Memory Reflection Matched");
+}
+
+// Layer 403 – Entry Correction Pulse Sync
+if (entry.imperfect() && bot.autoCorrect.ready) {
+  correctAndExecute("Layer 403 - Auto-Correction Pulse Sync");
+}
+
+// Layer 404 – Fragment Recall Chain Injection
+if (fragment.chainFound() && impulse.similarityScore > 89) {
+  restoreSequence("Layer 404 - Memory Fragment Chain Injected");
+}
+
+// Layer 405 – Vault Auto-Command Transfer Node
+if (vault.open && commandTransfer.enabled) {
+  pushCommand("Layer 405 - Vault Auto Transfer Active");
+}
+
+// Layer 406 – Mirror-Warp Signal Gateway
+if (entryWarpDetected() && mirrorWarp.signal == true) {
+  routeTrade("Layer 406 - Mirror Warp Gateway Activated");
+}
+
+// Layer 407 – Shadow Directive Delay Sync
+if (phantom.triggerDelay() && no resistance()) {
+  delayAlign("Layer 407 - Shadow Delay Synchronized");
+}
+
+// Layer 408 – NEITH Memory Crosspoint Lock
+if (crossMemoryIntersection.exists() && memoryStatus == "stable") {
+  lockMemoryCore("Layer 408 - NEITH Crosspoint Memory Lock Engaged");
+}
+
+// Layer 409 – Core Entry Reversal Validator
+if (entry.reversed() && impulseMatch.exists()) {
+  confirmReversal("Layer 409 - Core Entry Reversal Confirmed");
+}
+
+// Layer 410 – NEITH PHASE II Final Seal
+if (entry.success && directiveLoop == "clean") {
+  sealPhase("NEITH-PHASE-II");
+  log("Layer 410 - NEITH PHASE II COMPLETED – CORE PATH ALIGNED.");
+}
