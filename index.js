@@ -2401,3 +2401,121 @@ if (vaultThreadAligned(symbol) && pastImpulseHit(symbol)) {
 if (directiveMismatchDetected(symbol) && coreConflictDetected(symbol)) {
   avoidBuy("Layer 430 - Directive Conflict. Soul Override Prevented.");
 }
+
+// ========== Layer 431–450: Fractal Core Sync + Mirror Path Override ==========
+
+// Layer 431 – Deep Core Imprint Vault Trigger
+if (vaultMemory.matchLevel("deep") && tradeWindow.open()) {
+  initiateSequence("deep-core-imprint");
+  console.log("Layer 431: Deep Core Imprint Vault Triggered.");
+}
+
+// Layer 432 – Phantom Vault Echo Anchor
+if (anchorZone.echoMatch() && pastImpulse.aligns()) {
+  lockAnchor("phantom-echo");
+  console.log("Layer 432: Phantom Vault Echo Anchor Locked.");
+}
+
+// Layer 433 – Shadow Liquidity Pulse Rebound
+if (shadowLiquidity() > 88 && reboundCandle.formed()) {
+  sniperBuy("Layer 433 - Shadow Pulse Rebound");
+}
+
+// Layer 434 – Mirror Fractal Sequence Detector
+if (fractals.repeating() && mirrorDetected()) {
+  overrideEntry("mirror-fractal-sequence");
+  console.log("Layer 434: Mirror Sequence Detected – Entry Adjusted.");
+}
+
+// Layer 435 – Trigger Recoil Crosspath
+if (impulse.crosspath() && volatility.spikeDetected()) {
+  initiateSniper("recoil-cross-trigger");
+}
+
+// Layer 436 – Core Directive Echo Shield Extension
+if (sniperShield.needsExtension()) {
+  extendShield("echo-directive");
+  console.log("Layer 436: Core Directive Echo Shield Extended.");
+}
+
+// Layer 437 – Trade Loop Divergence Sync
+if (loopDetected() && divergence.angle > 38) {
+  exitTrade("loop-break");
+  console.log("Layer 437: Trade Loop Divergence Exit Executed.");
+}
+
+// Layer 438 – Predictive Momentum Pre-Cycle Trigger
+if (momentum.shifting() && entryCycle.prephase()) {
+  injectImpulse("pre-cycle-momentum");
+  console.log("Layer 438: Predictive Pre-Cycle Trigger Injected.");
+}
+
+// Layer 439 – Synaptic Signal Override Bridge
+if (conflictSignalDetected()) {
+  overrideWith("synaptic-bridge");
+  console.log("Layer 439: Synaptic Override Engaged.");
+}
+
+// Layer 440 – Recoil Lock Sync Beam
+if (recoil.angleAlign() && recentEcho.lockMatch()) {
+  engage("recoil-beam");
+  console.log("Layer 440: Recoil Lock Beam Engaged.");
+}
+
+// Layer 441 – Pulse Vault Convergence Path
+if (convergingPaths(3) && memoryVault.confirmed()) {
+  enterSniper("pulse-vault-converge");
+}
+
+// Layer 442 – Auto-Impulse Redirection Node
+if (impulse.redirectRequired()) {
+  rerouteEntry("auto-impulse-node");
+  console.log("Layer 442: Auto-Impulse Redirection Activated.");
+}
+
+// Layer 443 – Soul Trigger Reinforcement Core
+if (soulTrigger.status !== "synced") {
+  syncSoulTrigger("layer-443");
+  console.log("Layer 443: Soul Trigger Reinforced and Synced.");
+}
+
+// Layer 444 – Timeline Deviation Warp Detection
+if (timeline.shifted() && marketSignal.delayed()) {
+  applyWarpCorrection("timeline-override");
+}
+
+// Layer 445 – Core Pattern Imprint Bridge
+if (patternMatch > 87 && impulseLoop.active) {
+  reinforcePattern("core-bridge");
+  console.log("Layer 445: Pattern Bridge Reinforced.");
+}
+
+// Layer 446 – Vault Integrity Double Lock
+if (core.lockStatus !== "reinforced") {
+  lockVault("double-layer");
+  console.log("Layer 446: Vault Integrity Double Lock Activated.");
+}
+
+// Layer 447 – Shadow Anchor Sync Divergence
+if (shadowAnchor !== aligned && echoCore.conflicts()) {
+  reroute("safe-anchor-path");
+  console.log("Layer 447: Shadow Anchor Divergence Detected.");
+}
+
+// Layer 448 – Signal Core Purge Filter
+if (impureSignalDetected()) {
+  purgeSignal("core-cleanse");
+  console.log("Layer 448: Signal Purge Activated.");
+}
+
+// Layer 449 – NEITH Trigger Key Recall
+if (triggerVault.key("neith") && pulseVerified()) {
+  unlockDirective("neith-phase-3");
+  console.log("Layer 449: NEITH Trigger Key Activated.");
+}
+
+// Layer 450 – Directive Gate Pass Override
+if (allLayers.status("stable") && timeKey.synced()) {
+  enableCommand("final-directive-transfer");
+  console.log("Layer 450: Directive Gate Override Passed.");
+}
