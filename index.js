@@ -17,7 +17,78 @@ function precisionGridLock(symbol, price) {
   return lockedGrid;
 }
 
-async function executeSniper() {
+async function executeSniper()// ========== SNIPER CLONE VOICE: TRIGGER SUPPORT HANDLERS ==========
+
+function sniperBuy(reason) {
+  console.log(`[SNIPER BUY TRIGGERED] ${reason}`);
+  executeSniper();
+}
+
+function sniperSell(reason) {
+  console.log(`[SNIPER SELL TRIGGERED] ${reason}`);
+  // Sell logic placeholder
+}
+
+function avoidBuy(reason) {
+  console.log(`[AVOID ENTRY] ${reason}`);
+}
+
+function markChart(label) {
+  console.log(`[MARK] Chart label: ${label}`);
+}
+
+function triggerSniperShot(type) {
+  console.log(`[SNIPER SHOT] ${type.toUpperCase()} triggered.`);
+  executeSniper();
+}
+
+function reinitiateTrade(path) {
+  console.log(`[REENTRY] Path triggered: ${path}`);
+  executeSniper();
+}
+
+function initiateScanSequence(trigger) {
+  console.log(`[SCAN SEQUENCE INITIATED] Reason: ${trigger}`);
+}
+
+function setTradeMode(mode) {
+  console.log(`[TRADE MODE] Switched to: ${mode}`);
+}
+
+function sniperExecute(type = 'buy', reason = 'auto') {
+  console.log(`[SNIPER EXECUTE] ${type.toUpperCase()} – Reason: ${reason}`);
+  executeSniper();
+}
+
+function holdFire(reason) {
+  console.log(`[HOLD FIRE] Reason: ${reason}`);
+}
+
+function disableEntry(reason) {
+  console.log(`[DISABLED ENTRY] ${reason}`);
+}
+
+function autoTrigger(reason) {
+  console.log(`[AUTO TRIGGER] ${reason}`);
+  executeSniper();
+}
+
+function confirmImpulseBuy(reason) {
+  console.log(`[CONFIRMED BUY] ${reason}`);
+  executeSniper();
+}
+
+function waitAndObserve(note) {
+  console.log(`[OBSERVE MODE] ${note}`);
+}
+
+function avoidEntry(note) {
+  console.log(`[AVOID ENTRY ZONE] ${note}`);
+}
+
+function alert(message) {
+  console.log(`[ALERT] ${message}`);
+} {
   const symbol = 'PIUSDT'; // You can change this to any coin
   const quantity = 1;       // Adjust quantity as needed
 
